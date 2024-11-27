@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>- tama -</title>
+  
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900;400;500;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+</head>
+  
+<body>
+  <header id="header">
+
+    <div id="hmb">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#twitter">twitter</a></li>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#youtube">Youtube</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  
+  <main>
+    <section class="section1">
+    <div id="kv"></div>
+
+    <div class="row">
+      <h2><span>Youtube</span></h2>
+    <div id="youtube" class="movie">
+      <div class="col"><iframe width="565" height="270" src="https://www.youtube.com/embed/bjijelDcU6Y?si=qQFL5cnXZ52obRpv&amp;controls=0&amp;start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+      <div class="col"><iframe width="565" height="270" src="https://www.youtube.com/embed/EPQ2nTSIK-8?si=FLrIgeGTvc3-tuYq&amp;controls=0&amp;start=49" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div class="col"><iframe width="565" height="270" src="https://www.youtube.com/embed/iPjYrPlQAk8?si=By9vFjm1l-wrVqGW&amp;controls=0&amp;start=33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </div>
+</section>
+
+</div>
+    <section>
+      <div class="row">
+        <div id="twitter">
+          <h2><span>Twitter</span></h2>
+        </div>
+        <div class="col2"><a class="twitter-timeline" href="https://twitter.com/tamacokamo?ref_src=twsrc%5Etfw" data-width=555px data-height="430px">Tweets by tamacokamo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      </div>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#twitter">twitter</a></li>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#youtube">Youtube</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  　<script type="text/javascript">
+    　　$(window).load(function() {
+    　　　$('a[href^=#]').click(function() {
+    　　　　var speed = 700;
+    　　　　var href = $(this).attr("href");
+    　　　　var target = $(href == "#" || href == "" ? 'html' : href);
+    　　　　var position = target.offset().top;
+    　　　　$("html, body").animate({
+    　　　　　scrollTop: position
+    　　　　}, speed, "swing");
+    　　　　return false;
+    　　　});
+    　　});
+    　</script>
+  <script>
+    const hmbBtn = document.getElementById("hmb");
+    const header = document.getElementById("header");
+
+    hmbBtn.addEventListener("click", function() {
+      header.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
